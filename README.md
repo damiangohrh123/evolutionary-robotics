@@ -4,10 +4,10 @@
 
 This project uses a Genetic Algorithm (GA) to evolve the shape and movement of virtual creatures inside a PyBullet physics simulation. The goal was to evolve creatures that could climb a Gaussian pyramid mountain by improving their body structure and control settings.
 
-<figure align="center">
-  <img src="./images/environment.png" alt="Description of image" width="400">
-  <figcaption>Figure 1: Environment and creature.</figcaption>
-</figure>
+<div align="center">
+  <img src="./images/environment.png" width="400">
+  <p align="center">Figure 1: Environment and creature.<p align="center">
+</div>
 
 ## Genetic Algorithm Overview
 The system iteratively improves a population of creatures through an evolutionary pipeline designed to maintain diversity and prevent premature convergence. 
@@ -73,10 +73,10 @@ Visual inspection revealed that many top-performing creatures utilized "rotation
 ## Environmental Manipulation
 To test whether changing the environment could help guide evolution, I added translucent bumpers next to the mountain to act as simple physical guides. The idea was that these bumpers would stop creatures from falling off the sides and push them to stay on a path that leads upward.
 
-<figure align="center">
+<div align="center">
   <img src="./images/barriers.png" alt="Description of image" width="400">
-  <figcaption>Figure 4: Environmental barriers implementation.</figcaption>
-</figure>
+  <p align="center">Figure 4: Environmental barriers implementation.<p align="center">
+</div>
 
 **Result:** The bumpers did not increase performance (Run 30 Fitness: 0.0575 compared to Run 29 without bumpers: 0.0703).
 
